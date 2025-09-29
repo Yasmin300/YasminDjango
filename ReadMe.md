@@ -245,4 +245,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 - **Author**: Yasmin 
 - **GitHub**: [Yasmin300](https://github.com/Yasmin300)  
 - **Project Repository**: [Yasmin300/YasminDjango](https://github.com/Yasmin300/YasminDjango)  
-- **Email**: (add your email or contact info)
