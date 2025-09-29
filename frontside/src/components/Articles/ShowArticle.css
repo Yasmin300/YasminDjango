@@ -1,0 +1,166 @@
+/* ---------- ARTICLES PAGE ---------- */
+.ArticlesPage {
+    padding: 2rem;
+    max-width: 1400px;
+    width: 85%;
+    margin: 40px auto;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #fff0f5, #ffe4e1);
+    color: #4b2e2e;
+    text-shadow: none;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.35);
+    animation: slideUpFadeIn 0.8s ease-out;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* Dark Mode Version (luxury feel) */
+.dark .ArticlesPage {
+    background: linear-gradient(145deg, #2c1b1b, #3a2a2a);
+    color: #f8e9d2;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+}
+
+/* Titles */
+.ArticlesTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    color: #c71585;
+    /* deep pink */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dark .ArticlesTitle {
+    color: #ffd700;
+    /* gold in dark mode */
+}
+
+/* Subtitles */
+.ArticlesSubtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #8b0000;
+}
+
+.dark .ArticlesSubtitle {
+    color: #ffddaa;
+}
+
+/* ---------- CONTENT AREA ---------- */
+.ArticlesContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Image Styling */
+.ArticlesImage img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid #ffd700;
+    /* gold border */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.ArticlesImage img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+}
+
+/* Text Block */
+.ArticlesDetails {
+    flex: 1 1 400px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(255, 192, 203, 0.25);
+}
+
+.dark .ArticlesDetails {
+    background: rgba(40, 25, 25, 0.85);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Links */
+.ArticlesDetails a {
+    color: #c71585;
+    /* pink link */
+    font-weight: bold;
+}
+
+.ArticlesDetails a:hover {
+    color: #ff69b4;
+    /* hot pink hover */
+}
+
+.dark .ArticlesDetails a {
+    color: #ffd700;
+    /* gold links in dark mode */
+}
+
+.dark .ArticlesDetails a:hover {
+    color: #ffdd77;
+}
+
+/* Comments Section */
+.commentItem {
+    background: #fff0f5;
+    border: 1px solid #ffd6d6;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(255, 192, 203, 0.2);
+
+    /* NEW */
+    word-break: break-word;
+    /* break long words */
+    overflow-wrap: anywhere;
+    /* modern standard */
+}
+
+.comment {
+    /* already has these, but reinforce */
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    /* preserves line breaks if any */
+}
+
+.dark .commentItem {
+    background: #2e1f1f;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Favorite heart */
+.fav {
+    color: #ff69b4 !important;
+}
+
+/* Responsive tweaks */
+@media(max-width: 1020px) {
+    .ArticlesContent {
+        flex-direction: column;
+    }
+
+    .ArticlesImage img {
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 500px) {
+    .addcomment {
+        width: 100%;
+    }
+}

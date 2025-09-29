@@ -1,0 +1,179 @@
+.ArticlesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1800px;
+    margin: 0 auto;
+    gap: 24px;
+    padding: 30px;
+    justify-content: center;
+}
+
+/* Page wrapper */
+.Articles {
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #ffeaf4, #fff);
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgba(255, 192, 203, 0.25);
+}
+
+/* Card styles */
+.ArticlesContainer>div {
+    background: #fff8fb;
+    border: 2px solid #f7c5d9;
+    border-radius: 24px;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 14px rgba(255, 182, 193, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gold glow border on hover */
+.ArticlesContainer>div:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+    border-color: #ffd700;
+}
+
+/* Dark mode variation */
+.dark .ArticlesContainer>div {
+    background: #2a2139;
+    border: 2px solid #ffd6e9;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.ArticlesList {
+    padding: 0;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #4a0035;
+}
+
+.dark .ArticlesList {
+    color: #ffeaf4;
+}
+
+/* Headings */
+.ArticlesList h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #c2185b;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em;
+    line-height: 1.5em;
+}
+
+.dark .ArticlesList h3 {
+    color: #ffd6e9;
+}
+
+/* Body text */
+.ArticlesList p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: #5f4b53;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em;
+    line-height: 1.5em;
+
+}
+
+.dark .ArticlesList p {
+    color: #f3d9ff;
+}
+
+/* Metadata */
+.ArticlesList span {
+    display: block;
+    margin: 4px 0;
+    font-size: 14px;
+    color: #a87e8a;
+}
+
+.dark .ArticlesList span {
+    color: #ffd6e9;
+}
+
+/* Tags as pill shapes */
+.ArticleTag {
+    display: inline-block;
+    background: #ffe0f0;
+    color: #a6004c;
+    padding: 4px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #ffb6c1;
+}
+
+.dark .ArticleTag {
+    background: #ff77aa;
+    color: white;
+    border: 1px solid #ffd700;
+}
+
+/* Action icons */
+.fas.fa-phone,
+.fas.fa-heart,
+.fas.fa-edit,
+.fas.fa-trash {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #d63384;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fas.fa-edit:hover {
+    color: #ffd700;
+}
+
+.fas.fa-trash:hover {
+    color: #ff1744;
+}
+
+/* Plus button (gold with pink glow) */
+.plus-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 36px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(145deg, #ff85b5, #ff4081);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.5),
+        0 0 12px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plus-button:hover {
+    background: linear-gradient(145deg, #ff4081, #d81b60);
+    box-shadow: 0 8px 16px rgba(255, 105, 180, 0.7),
+        0 0 16px rgba(255, 215, 0, 0.7);
+    transform: scale(1.1);
+}
+
+@media (max-width: 360px) {
+    .ArticlesContainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

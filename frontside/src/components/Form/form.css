@@ -1,0 +1,133 @@
+.ContainForm {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+}
+
+.Form {
+    direction: rtl;
+    margin: auto;
+    background-color: rgba(255, 161, 219, 0.6);
+    color: rgba(241, 219, 14, 0.9);
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 241, 159);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+.Form span {
+    color: #ff0000;
+
+}
+
+.dark .Form span {
+    color: #ffffff;
+
+}
+
+.dark .Form {
+    background-color: rgb(28, 28, 66);
+}
+
+.Form h2 {
+    text-align: center;
+    color: #dab307;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.Form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #8b8b8b;
+}
+
+.article-title,
+.article-body {
+    unicode-bidi: plaintext;
+    /* auto-detect text direction */
+}
+
+.Form input[type="text"],
+.Form input[type="email"],
+.Form input[type="password"],
+.Form input[type="number"],
+.Form input[type="url"],
+.Form select {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7ffb0;
+    color: #6e0069;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.Form input[type="text"]:focus,
+.Form input[type="email"]:focus,
+.Form input[type="password"]:focus,
+.Form input[type="number"]:focus,
+.Form input[type="url"]:focus,
+.Form select:focus {
+    outline: none;
+    border: 2px solid #ff03b3;
+    box-shadow: 0 0 5px rgba(155, 0, 216, 0.5);
+    background-color: #fcffea;
+    transition: all 0.2s ease;
+}
+
+.Form input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.Form .form-check-label {
+    font-weight: normal;
+}
+
+.Form .check {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1f500;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(255, 0, 157);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.Form button:hover {
+    background-color: #e6aef7;
+}

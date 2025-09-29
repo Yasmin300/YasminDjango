@@ -1,0 +1,117 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px 30px;
+}
+
+.navbar-toggler {
+    margin: auto;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    /* vertically centers children */
+}
+
+.searchIcon {
+    font-size: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.searchIcon:hover {
+    transform: scale(1.05) translateY(-5px);
+    color: #ffffff;
+}
+
+.secPart {
+    font-size: 25px;
+    color: #ffffff !important;
+}
+
+.toggle {
+    font-size: 30px;
+}
+
+.user-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid gray;
+}
+
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+.imgAccount {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#mainNavbar {
+
+    z-index: 1050;
+    /* higher than other page content */
+}
+
+.buttonadvanced {
+    color: white;
+    font-size: larger;
+}
+
+@media(max-width:991px) {
+    .navbar-nav {
+        width: 100%;
+        padding: 0px !important;
+        margin: 0 auto !important;
+    }
+
+    #mainNavbar h3 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .searchInput {
+        width: 70%;
+    }
+
+    .advance {}
+
+    .navbar-toggler {
+        margin-bottom: 15px;
+    }
+
+    .searchCon {
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:700px) {
+    .advance input::placeholder {
+        font-size: 13px;
+    }
+}
